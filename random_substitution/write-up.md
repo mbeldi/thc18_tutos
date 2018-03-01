@@ -10,7 +10,7 @@ A chaque étape on doit regarder notre texte pour voir s'il y a des mots qui son
 
 On a utilisé ce site qui facilite énormément la résolution d'un challenge de ce type: http://practicalcryptography.com/ciphers/simple-substitution-cipher/
 
-D'abord on doit voir les combinaisons de trois lettres les plus fréquentes dans notre texte: `RMC`,`BQE`,`BEI`,`CER`,`RBQ`,`HEV`,`KAC`,`MHY`,`HYZ`,`TCE`,`DCA`,`YQL`,`RQK` -> on voit parmi ces combinaisons de trois lettres celles qui forment des mots entiers pour les remplacer avec `the` et `and` -> remplacer `RMC` par `the` et `HEV` par `and` (bqe, bei, cer, rbq ne forment pas des mots).
+D'abord on doit voir les combinaisons de trois lettres les plus fréquentes dans notre texte: `RMC`,`BQE`,`BEI`,`CER`,`RBQ`,`HEV`,`KAC`,`MHY`,`HYZ`,`TCE`,`DCA`,`YQL`,`RQK` -> on voit parmi ces combinaisons de trois lettres celles qui forment des mots entiers pour les remplacer avec `the` et `and` -> remplacer `RMC` par `the` et `HEV` par `and` (`BQE`,`BEI`,`CER`,`RBQ` ne forment pas des mots).
 
 Après, on doit voir les combinaisons de deux lettres identiques les plus fréquentes dans notre texte: `SS`,`OO` -> `AA` est très fréquent donc c'est probablement ss donc on remplace `A` par `s` (y a une seule occurence de `oo` c'est pour cette raison qu'on ne l'a pas remplacé).
 
@@ -53,5 +53,8 @@ Donc, pour déchiffrer notre flag on utilise https://aesencryption.net/ et on me
 
 #### Preparation
 
-Ce challenge est préparé en utilisant le siteweb "http://practicalcryptography.com/ciphers/simple-substitution-cipher/" en mettant comme plaintext "Welcome to the Toulouse Hacking Convention which is an event of talks and presentations based around IT security and followed by a Capture the Flag competition. The Toulouse Hacking Convention aims to bring together professionals, researchers and hackers from across the domain. The classical modern cryptography is interesting and useful. The key is i love crypto."
-et comme key "hwyvcximbgzoleqpsdarktfujn".
+Ce challenge est préparé en utilisant le siteweb "http://practicalcryptography.com/ciphers/simple-substitution-cipher/" en mettant:
+
+Plaintext: "Welcome to the Toulouse Hacking Convention which is an event of talks and presentations based around IT security and followed by a Capture the Flag competition. The Toulouse Hacking Convention aims to bring together professionals, researchers and hackers from across the domain. The classical modern cryptography is interesting and useful. The key is i love crypto."
+
+Key: "hwyvcximbgzoleqpsdarktfujn".
