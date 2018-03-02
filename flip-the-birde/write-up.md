@@ -6,7 +6,7 @@ AES est un chiffrement par bloc, ce qui signifie que le texte en clair est divis
 
 En soi, un chiffrement par bloc ne convient que pour la transmission sécurisée d'un bloc. Donc, afin de coder de plus grandes quantités de données, divers modes de fonctionnement ont été introduits. CBC (Cipher Block Chaining) est l'un de ces modes.
 
-![CBC](cbc.png)
+![CBC](https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Schema_CBC.svg/1482px-Schema_CBC.svg.png)
 
 Comme le montre la figure, pour chiffrer un bloc en mode CBC, on effectue un "ou exclusif" (XOR) entre le texte en clair de chaque bloc et le texte chiffré du bloc précédent (ou le vecteur d'initialisation IV pour le premier bloc), puis codé avec un algorithme choisi (AES dans notre cas). 
 
@@ -88,8 +88,7 @@ print "Received: "+msg
 arr = arr.split(' ')
 ori = ['f', 'a', 'l', 's', 'e']
 new = ['t', 'r', 'u', 'e', ';']
-```
-```
+
 for i in range(0, 5):
     arr[9+i] = hex(int(arr[9+i], 16) ^ ord(ori[i]) ^ ord(new[i]))
     arr[9+i] = arr[9+i].replace('0x','')
