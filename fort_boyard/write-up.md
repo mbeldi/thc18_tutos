@@ -33,7 +33,7 @@ The processors found in most personal computers? intel (Spectre and meltdown are
 
 `8th Question:`
 
-Année d'apparition de WannaCry? 2017 (date d'apparition de meltdown et spectre)
+Year of apparition of WannaCry? 2017 (date d'apparition de meltdown et spectre)
 
 `9th Question:`
 
