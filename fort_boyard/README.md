@@ -34,7 +34,7 @@ The processors found in most personal computers? (5 letters)
 
 `8th Question:`
 
-Année d'apparition de WannaCry? (number)
+Year of apparition of WannaCry? (number)
 
 `9th Question:` 
 
