@@ -110,6 +110,7 @@ Connection to localhost closed.
 ```
 *-i: préciser la clé privée à utiliser*
 
+*note: faites attention à la version du client ssh (OpenSSH), la version récente n'accepte plus la clé de taille moins de 1024 bits.*
 
 Malheureusement, la connexion ssh est interdit mais pas sftp.
 On se connecte en sftp afin de télécharger le code source `get_flag.php`.
@@ -130,3 +131,4 @@ ssh -i <priv_key> -N -L 8888:localhost:80 webmonster@localhost -p 2222
 *-L: redirection ssh*
 
 On visite `http://localhost:8888/get_flag.php` et récupère le flag! `THC18{M0nsterISzSc4ry!}`
+
